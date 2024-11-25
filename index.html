@@ -74,6 +74,14 @@ require.config({
         }
     }
 });
+
+        // Add class 'toc-visible' if on desktop
+        window.onload = function() {
+            if (window.innerWidth > 1024) { // Adjust the width as needed for your definition of 'desktop'
+                document.getElementById('app-container').classList.add('toc-visible');
+            }
+        };
+
 </script>
 
     </head>
